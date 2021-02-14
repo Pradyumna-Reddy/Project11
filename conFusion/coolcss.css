@@ -1,0 +1,293 @@
+main{
+    background: #DEF2F1;
+    padding: 5%;
+}
+
+#add_task{
+    border : 1px groove rgb(245, 245, 245);
+    padding: 40px;
+}
+
+#add_task form{
+    color: #fff;
+    margin: auto;
+    width: 60%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 1fr ;
+}
+
+#add_task input, #add_task label, #add_task textarea{
+    display:block;
+}
+
+#title_div{
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: stretch;
+    justify-items: center;
+    background: #B9E4E1;
+    border-radius: 7px;
+    
+
+}
+
+#title_div label, .desc_div label{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    align-self: center;
+}
+
+#task_title{
+    width: 70%;
+    margin: 6px;
+    box-sizing: border-box;
+    border-color: transparent;
+    justify-self: start;
+}
+
+.desc_div{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: stretch;
+    justify-items: center;
+    background: #B9E4E1;
+    border-radius: 7px;  
+    padding: 20px auto; 
+    margin-bottom: 40px;
+}
+
+
+form textarea{
+    border-color: transparent;
+    width: 70%;
+    margin: 6px;
+    justify-self: start;
+}
+
+
+#student_main{
+    min-height: 50vh;
+}
+
+.notice{
+    background: #E7DEF2;  
+    padding: 20px auto; 
+    position: relative;
+    margin-bottom: 40px;
+    border : 1px groove rgb(245, 245, 245);
+    
+}
+
+.notice p{
+    position: absolute;
+    left: 10%;
+}
+
+#upload_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#file{
+    position: absolute;
+    left: -10000px;
+}
+
+.button_color{
+    background-color: #f1c7c9;
+}
+
+.upload_button_color{
+    background-color: #4EB15E;
+}
+
+.delete_button_color{
+    background-color: #e64a52c2;
+}
+
+.delete_button_color:hover{
+    background-color: #e6242e;
+}
+
+.button_color:hover{
+    background-color: #e7b0b1;
+}
+
+
+.button{
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 28px;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+
+.button:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 #888;
+}
+
+
+.shadow{
+    box-shadow: 1px 2px #888;
+}
+
+
+#display-added-tasks{
+    margin-top: 5%;
+    border : 1px groove rgb(245, 245, 245);
+    padding: 40px; 
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.display_task{
+    background-color: #B9E4E1;
+    margin-bottom: 5%;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.display_task_name{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.display_description{
+    background-color: #DEF2F1;
+    padding: 10px;
+    margin-bottom: 5%;
+    border-radius: 3px;
+}
+
+.text-back{
+    text-align: center;
+    padding: 15px;
+    background-color: #DEF2F1;   
+    border-radius: 3px;
+}
+
+.delete_button{
+    align-self: flex-end;
+}
+
+#file_assign{
+    position: absolute;
+    left: -10000px;
+}
+
+.upload_button form{
+    display: flex;
+    flex-direction: column;
+}
+
+.file_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+}
+
+.buttons_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+.notice-for-student{
+    background: #E7DEF2;  
+    padding: 20px auto; 
+    position: relative;
+    border : 1px groove rgb(245, 245, 245);
+    align-self: center;
+    width : 90%;
+    margin-bottom: 20px;
+}
+
+
+.notice-for-student p{
+    position: relative;
+    top: 40%;
+    left: 10%;
+}
+
+.bg-color-override{
+    background-color: #DEF2F1 !important;
+}
+
+#assess_form{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+.assess_fields{
+    display: flex;
+    background: #B9E4E1;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+.assess_fields label{
+    font-size: large;
+}
+
+.assess_fields input{
+    margin-left: 10px;
+    border-color: transparent;
+    padding: 10px;
+}
+
+#form_div{
+    display: flex;
+    justify-content: center;
+}
+
+.fade-out{
+    height: 40px;
+    animation-name: fadeout;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+@keyframes fadeout{
+    50%{
+        font-size: larger;
+    }
+    100%{
+        font-size: 0;
+    }
+}
+
+
+.table_div table, th, td{
+    margin: auto;
+    width:50%;
+    border: 3px solid #B9E4E1;;
+    padding: 10px;
+}
+
+td{
+    text-align: center;
+}
